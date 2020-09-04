@@ -1,0 +1,112 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Navaneeth Balaji}
+\address{201 Tanjong Rhu Rd \linebreak Singapore, 437916}
+\contacts{(+65) 8500 2396 \linebreak navaneethbalaji6@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Sydney, Australia}{University of New South Wales}{Feb 2017 - Present}
+			\begin{itemize}
+				\item Expected Graduation: Feb 2021
+				\item Bachelor of Engineering (Honours) Software Engineering
+				\item Coursework: Data structures and Algorithms; Operating Systems; Computer Networks; Databases; Object Oriented Design and Programming
+				\item Research: Generative Sound Design - An AI approach to creative sound design for musicians and filmmakers
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Experience}
+		\begin{cvsubsection}{Software Engineer, Intern}{Musiio}{Dec 2019 -- Feb 2020}
+			\begin{itemize}
+				\item Musiio is a Singapore based Music Technology startup that uses artificial intelligence to automate common music industry workflows
+				\item Increased reliability of deployed services by developing a system wide health check reporting system in Go
+				\item Streamlined the data-set building process by developing a REST API for a data-set validation platform in Go
+				\item Both projects had a strong focus on design, documentation and testing
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{AI Developer, Intern}{Musiio}{Nov 2018 -- Feb 2019}
+			\begin{itemize}
+				\item Researched and developed a deep learning model using Tensorflow to classify music based on audio quality, achieving 80\% accuracy
+				\item Increased time efficiency of existing machine learning pipelines by designing, developing and deploying a data generation library in Python
+				\item The library took advantage of the HDF5 file format to overcome data access bottlenecks
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Lead Teacher}{CODE4FUN}{Apr 2018 -- Mar 2020}
+			\begin{itemize}
+				\item Taught programming concepts in Scratch and OpenProcessing to classes of up to 25 students
+				\item Developed fun and enriching technology-education lesson plans for weekly classes and summer workshops
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Projects}
+		\begin{cvsubsectionproject}{VST Plugin Suite}{}{C++, JUCE}
+			\begin{itemize}
+				\item A collection of Virtual Studio Technology (VST) plugins that can be used within any compatible Digital Audio Workstation
+				\item The collection contains an analog emulation synthesizer, a sampler and a delay audio effect plugin
+			\end{itemize}
+		\end{cvsubsectionproject}
+		
+		\begin{cvsubsectionproject}{RecipeThing}{}{Python, Flask, ReactJS, SQLite}
+			\begin{itemize}
+				\item Group project for a Software Engineering workshop course
+				\item Our team developed a web application that allowed users to easily look up recipes and their associated ingredient costs from nearby grocery stores
+			\end{itemize}
+		\end{cvsubsectionproject}
+		
+	\end{cvsection}
+	
+	\begin{cvsection}{Leadership}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{HQ2PDF Media Team In Charge (2016 – 2017):} Managed a team of 10, delegating media related duties during National Service in the Singapore Armed Forces
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Languages}: Python; Go; C++; C
+				\item \textbf{Databases}: SQLite; PostgreSQL; mongoDB(prior experience)
+				\item \textbf{Testing Frameworks}: PyTest (Python); GoMock (Go); Catch2 (C++)
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
